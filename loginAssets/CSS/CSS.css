@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  background: #364f6b;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.bor {
+  /* width: 48%;
+  height: 60%;
+  margin: 5% auto; */
+  /* float: right; */
+  /* margin-top: 105px; */
+  text-align: center;
+  /* margin-left: 200px; */
+}
+
+.gif {
+  border-radius: 100%;
+  border: 2px;
+  height: 150px;
+}
+.lo {
+  font-size: 30px;
+
+  text-align: center;
+}
+.box {
+  margin-top: 100px;
+  text-align: center;
+  display: block;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid aqua;
+  padding: 14px 10px;
+  width: 270px;
+  outline: none;
+  border-radius: 24px;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  width: 370px;
+  border-color: #06df68;
+  transition: 0.75s;
+}
+
+#log {
+  border: 0;
+  color: white;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #06df68;
+  padding: 14px 10px;
+  width: 120px;
+  outline: none;
+  border-radius: 24px;
+}
+
+#log:hover {
+  border-color: aqua;
+  color: #06df68;
+  width: 160px;
+  transition: 0.75s;
+}
+#rr {
+  background: none;
+  /* float: left; */
+  padding-top: 50px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+#rocket {
+  animation: fly 6s infinite ease-in-out;
+}
+#shadow {
+  animation: fly 6s infinite linear;
+}
+
+@keyframes fly {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: scalex(1.1);
+  }
+}

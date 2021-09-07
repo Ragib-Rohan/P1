@@ -1,0 +1,505 @@
+.scene {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#111425, #3751e0);
+    background-attachment: fixed;
+    overflow: hidden;
+    /* margin-top: 10px; */
+}
+.scene::before {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    transition: 0.5s;
+    background: linear-gradient(transparent, #fff, rgb(25, 132, 255));
+}
+.scene.active::before {
+    bottom: 0;
+}
+.scene.active {
+    background: linear-gradient(#ffeb3b, #ff9800);
+}
+.moon {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    background: wheat;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.moon::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#111425, #3751e0);
+    background-attachment: fixed;
+    cursor: pointer;
+}
+
+.scene.active .moon {
+    left: 200px;
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.5), 0 0 0 40px rgba(255, 255, 255, 0.5),
+        0 0 0 80px rgba(255, 255, 255, 0.5), 0 0 0 120px rgba(255, 255, 255, 0.3), 0 0 0 180px rgba(255, 255, 255, 0.2),
+        0 0 0 240px rgba(255, 255, 255, 0.2), 0 0 0 300px rgba(255, 255, 255, 0.1);
+}
+.scene.active .moon::before {
+    opacity: 0;
+}
+.forest {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scale(1.2);
+    z-index: 100;
+    transition: 1s;
+}
+.scene.active .forest {
+    bottom: -100%;
+}
+.scene i {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: animate linear infinite;
+}
+.scene.active i {
+    display: none;
+}
+.bgg {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    transition: 0.5s;
+    z-index: 1000;
+    transform: translateY(100%);
+}
+
+.scene.active .bgg {
+    transform: translateY(0%);
+}
+/* Moon ANd Sun */
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    10%,
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+.cloud1 {
+    position: absolute;
+    max-width: 600px;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    animation: animatecloud 35s linear infinite;
+}
+.cloud2 {
+    position: absolute;
+    max-width: 400px;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    animation: animatecloud 25s linear infinite;
+}
+.cloud3 {
+    position: absolute;
+    max-width: 600px;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    animation: animatecloud 75s linear infinite;
+}
+.cloud4 {
+    position: absolute;
+    max-width: 200px;
+    top: 200;
+    left: 0;
+    z-index: 10000;
+    animation: animatecloud 90s linear infinite;
+    animation-delay: -7s;
+}
+.cloud5 {
+    position: absolute;
+    max-width: 500px;
+    top: 150;
+    left: 0;
+    z-index: 10000;
+    animation: animatecloud 40s linear infinite;
+    animation-delay: -10;
+}
+.cloud6 {
+    position: absolute;
+    max-width: 400px;
+    top: 75;
+    left: 0;
+    z-index: 10000;
+    animation: animatecloud 50s linear infinite;
+    animation-delay: -5;
+}
+
+@keyframes animatecloud {
+    0% {
+        transform: translateX(-100%) scale(1);
+    }
+    100% {
+        transform: translateX(400%) scale(1.5);
+    }
+}
+
+img {
+    pointer-events: none;
+}
+
+.tt {
+    font-size: 20px;
+}
+.tt span {
+    font-size: 40px;
+    color: rgb(89, 89, 245);
+}
+/* 2nd svg */
+
+#LeftHand {
+    animation: Lhand 2s infinite linear;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#RightHand {
+    animation: Rhand 2s infinite linear;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#woman {
+    animation: WA2 2s infinite linear;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#book {
+    animation: BA 2s infinite linear;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#Lleaf {
+    animation: LA 2s infinite linear;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#rleaf {
+    animation: RA 2s infinite linear;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes Lhand {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    40% {
+        transform: rotateZ(5deg);
+    }
+}
+@keyframes Rhand {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    40% {
+        transform: rotateZ(10deg);
+    }
+}
+@keyframes WA2 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    40% {
+        transform: rotateZ(2deg);
+    }
+}
+@keyframes BA {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    40% {
+        transform: rotateZ(20deg);
+    }
+}
+
+@keyframes LA {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    40% {
+        transform: rotateZ(20deg);
+    }
+}
+@keyframes RA {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    40% {
+        transform: rotateZ(20deg);
+    }
+}
+
+/* 3rdsvg */
+
+#Q {
+    animation: QM 2.5s infinite linear;
+    transform: center;
+    transform-box: fill-box;
+}
+#hand {
+    animation: MA 2.5s infinite linear;
+    transform: top;
+    transform-box: fill-box;
+}
+#whand {
+    animation: WA 2s infinite linear;
+    transform: center;
+    transform-box: fill-box;
+}
+
+@keyframes QM {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(5deg);
+    }
+}
+@keyframes MA {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    40% {
+        transform: rotateZ(10deg);
+    }
+}
+@keyframes WA {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    40% {
+        transform: rotateZ(8deg);
+    }
+}
+
+/* flex */
+.container {
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.container .box {
+    width: 20vw;
+    text-align: center;
+    line-height: 50vh;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.box h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 50vh;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+}
+h1 span a {
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    transition: 1.5s;
+    color: #fff;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.box:hover h1 span a {
+    color: #262626;
+    background: rgba(255, 255, 255, 0.8);
+    letter-spacing: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+.box:hover h1 {
+    background: rgba(0, 0, 0, 0);
+}
+.box:hover {
+    width: 40vw;
+}
+.container .box:nth-child(1) {
+    background: url("fimg/wd1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .box:nth-child(2) {
+    background: url("fimg/ad.png");
+    background-position: center;
+    background-size: cover;
+}
+.container .box:nth-child(3) {
+    background: url("fimg/sd.jpg");
+    background-position: center;
+}
+.container .box:nth-child(4) {
+    background: url("fimg/Gd.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.container .box2 {
+    width: 20vw;
+    text-align: center;
+    line-height: 50vh;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.box2 h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 50vh;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+}
+
+.box2:hover h1 span a {
+    color: #262626;
+    background: rgba(255, 255, 255, 0.8);
+    letter-spacing: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+.box2:hover h1 {
+    background: rgba(0, 0, 0, 0);
+}
+.box2:hover {
+    width: 40vw;
+}
+
+.container .box2:nth-child(1) {
+    background: url("fimg/a.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .box2:nth-child(2) {
+    background: url("fimg/ff.png");
+    background-position: center;
+    background-size: cover;
+}
+.h-bg {
+    font-size: 35px;
+    color: rgb(89, 89, 245);
+    text-shadow: 0px 4px 4px rgb(225, 225, 243), 0px 4px 4px rgb(150, 150, 231), 0px 4px 4px rgb(22, 22, 24);
+}
+
+/* !about */
+#sss {
+    position: relative;
+    height: 105vh;
+    display: flex;
+}
+#sss .screen {
+    position: relative;
+    flex-grow: 1;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#sss .screen:hover {
+    flex-grow: 5;
+}
+#sss .screen:nth-child(1) {
+    background: rgb(168, 167, 167);
+}
+#sss .screen:nth-child(2) {
+    background: rgb(236, 236, 76);
+}
+
+#sss .screen .cardd {
+    max-width: 300px;
+    text-align: center;
+    transition: 1s;
+}
+.split p {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#sss .screen .cardd .imgBX {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#sss .screen .cardd .imgBX img {
+    max-width: 100%;
+}
+
+#sss .screen .cardd a {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 100px;
+    background: white;
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#sss .screen .cardd a:hover ~ .content,
+.content:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+#sss .screen:nth-child(2) .content {
+    background: rgb(248, 248, 69);
+}
+.mar span {
+    font-size: 30px;
+    color: rgb(89, 89, 245);
+}

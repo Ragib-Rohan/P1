@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.c_all2 {
+    background: rgba(50, 17, 170, 0.267);
+    font-family: "Nunito", sans-serif;
+    border: 5px solid blue;
+    margin: 0px 25px 25px 25px;
+    padding: 25px;
+    border-radius: 20px;
+}
+.blurb h2 {
+    color: blue;
+    font-weight: 100;
+    font-size: 2.5rem;
+    font-family: "Bungee Shade", cursive;
+}
+
+.blurb p {
+    color: blueviolet;
+    font-weight: 100;
+    font-size: 1.235rem;
+    line-height: 2;
+    font-family: "Oleo Script", cursive;
+}
+
+.c_all2 h2 {
+    color: blue;
+    font-weight: 100;
+    font-size: 2.5rem;
+    font-family: "Bungee Shade", cursive;
+}
+
+.c_all2 p {
+    color: blueviolet;
+    font-weight: 100;
+    font-size: 1.235rem;
+    line-height: 2;
+    font-family: "Oleo Script", cursive;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.c1 {
+    height: 500px;
+    width: 750px;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}

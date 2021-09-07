@@ -1,0 +1,75 @@
+nav img {
+    height: 60px;
+}
+
+.bg {
+    background-color: rgba(36, 36, 37, 0.534);
+}
+
+#C2_Nav .nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#C2_Nav .nav-link:hover {
+    color: rgb(88, 88, 235);
+    transition: 0.55s;
+}
+#C2_Nav .dropdown-item {
+    font-weight: normal;
+}
+#C2_Nav .dropdown-item:hover {
+    color: rgb(69, 69, 245);
+    transition: 0.65s;
+}
+
+.nav-btn {
+    background-color: none;
+    background: none;
+    border: none;
+    font-weight: lighter;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+}
+nav-btn:hover {
+    color: rgb(88, 88, 235);
+    transition: 0.75s;
+}
+i:hover {
+    color: rgb(88, 88, 235);
+    transition: 0.55s;
+}
+
+/* !! logout dropdownitem */
+
+#ll {
+    color: rgb(101, 101, 241);
+    font-size: 20px;
+    font-weight: normal;
+}
+#ll:hover {
+    background: none;
+    color: rgb(37, 213, 236);
+    transition: 0.75s;
+}
+
+#lldropdown .dropdown-menu:hover {
+    background: none;
+}
+#lldropdown .dropdown-menu {
+    background: none;
+    border: none;
+    margin-right: 500px;
+}
+#lldropdown .dropdown-item:hover {
+    background: none;
+}
+#p_panel {
+    color: rgb(101, 101, 241);
+    font-size: 20px;
+    font-weight: normal;
+}
+#p_panel:hover {
+    color: rgb(37, 213, 236);
+    transition: 0.75s;
+}

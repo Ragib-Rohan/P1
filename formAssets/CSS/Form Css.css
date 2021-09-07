@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: #364f6b;
+}
+
+.box {
+    padding-top: 30px;
+    font-family: "Inconsolata", monospace;
+}
+#ss {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    text-align: center;
+    outline: none;
+    border: 2px solid aqua;
+    margin: 15px 20px;
+    padding: 14px 10px;
+    width: 270px;
+    border-radius: 24px;
+    transition: 0.5s;
+    font-size: 20px;
+    color: white;
+}
+span {
+    padding-left: 10px;
+}
+.tt {
+    /*!For fname and lname*/
+    border: 0;
+    background: none;
+    /* display: block; */
+    text-align: center;
+    outline: none;
+    border: 2px solid aqua;
+    margin: 15px 20px;
+    padding: 14px 10px;
+    width: 250px;
+    border-radius: 24px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.ue {
+    /*!!for usernmae and e-mail */
+    border: 0;
+    background: none;
+    /* display: block; */
+    text-align: center;
+    outline: none;
+    border: 2px solid aqua;
+    margin: 15px 20px;
+    padding: 14px 10px;
+    width: 430px;
+    border-radius: 24px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.ue:focus {
+    /*!!for usernmae and e-mail */
+    width: 500px;
+    border-color: #05e76b;
+}
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: #05ee6e;
+}
+.tt:focus {
+    /*!!For fname and lname*/
+    width: 295px;
+    border-color: #04f570;
+}
+
+.spanB {
+    font-weight: bolder;
+    color: rgb(14, 159, 216);
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.op {
+    padding-left: 40px;
+    font-size: 20px;
+    color: rgb(27, 216, 27);
+    font-weight: lighter;
+}
+.sbutton {
+    /*!!signup Button */
+    font-size: 20px;
+    margin: 20px;
+    background: none;
+    outline: none;
+    border: 2px solid rgba(1, 228, 69, 0.856);
+    border-radius: 24px;
+    padding: 10px 8px;
+    color: aqua;
+    width: 100px;
+}
+.sbutton:hover {
+    width: 130px;
+    transition: 0.8s all;
+    border-color: aqua;
+    color: rgb(24, 236, 24);
+}
+
+/* !! svg classes */
+#right_wheel {
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#left_wheel {
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#man {
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+#hat {
+    animation: hata 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes bike {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(20deg);
+    }
+}
+@keyframes hata {
+    from {
+        transform: rotateY(7deg);
+    }
+    to {
+        transform: rotateX(17deg);
+    }
+}
+.stext {
+    text-align: center;
+    font-size: 20px;
+    color: chartreuse;
+}
+.etext {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(231, 17, 17);
+}

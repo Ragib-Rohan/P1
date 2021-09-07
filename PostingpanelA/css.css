@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(143, 143, 142);
+}
+#ff {
+    text-align: center;
+    box-shadow: 5px 3px 10px black;
+    padding: 30px;
+    margin: 100px auto 80px;
+    border-radius: 15px;
+    width: 600px;
+    background-color: rgb(233, 232, 227);
+}
+.tt {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid aqua;
+    padding: 14px 10px;
+    width: 270px;
+    outline: none;
+    border-radius: 24px;
+}
+#p_tr {
+    border: none;
+    text-align: center;
+    border: 2px rgb(40, 185, 103) solid;
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+    outline: none;
+    transition: 0.75s;
+}
+#p_tr:focus {
+    border: 2px rgb(16, 209, 223) solid;
+    width: 450px;
+    transition: 0.75s;
+}
+.tt:focus {
+    width: 370px;
+    border-color: #06df68;
+    transition: 0.75s;
+}
+
+.upload-box {
+    font-size: 16px;
+    background: rgb(245, 241, 241);
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px black;
+    width: 250px;
+    outline: none;
+}
+
+::-webkit-file-upload-button {
+    color: white;
+    background: #206a5d;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 0 1px 1px #6b4559;
+    outline: none;
+}
+::-webkit-file-upload-button:hover {
+    background: rgb(72, 145, 240);
+    transition: 0.75s;
+}
+#ff input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(6, 194, 194);
+    padding: 14px 10px;
+    width: 100px;
+    outline: none;
+    border-radius: 24px;
+    color: #06df68;
+    transition: 0.75s;
+}
+#ff input[type="submit"]:hover {
+    border: 2px solid #06df68;
+    width: 130px;
+    color: rgb(20, 126, 126);
+    transition: 0.75s;
+}
+.lablle {
+    font-size: 20px;
+    color: #06df68;
+    font-weight: bold;
+}
+#selection_panal {
+    text-align: center;
+    width: 400px;
+    margin-left: 50px;
+}
+#selection_panal label {
+    color: rgb(41, 0, 226);
+    margin: 0;
+    font-weight: lighter;
+    font-size: 15px;
+}
+label {
+    color: #06df68;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}

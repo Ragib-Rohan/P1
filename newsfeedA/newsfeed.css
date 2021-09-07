@@ -1,0 +1,74 @@
+.dd {
+    background: rgb(214, 213, 213);
+}
+
+#pp {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
+    align-content: center;
+}
+
+#ta {
+    width: 400px;
+    height: 100px;
+    border: none;
+    border: 2px rgb(0, 153, 255) solid;
+    border-radius: 15px;
+    outline: none;
+    padding: 5px;
+    transition: 0.75s;
+}
+#ta:focus {
+    width: 450px;
+    transition: 0.75s;
+    border: 2px rgb(27, 204, 189) solid;
+}
+.cmtbtn {
+    border: none;
+    background: none;
+    border: 2px rgb(243, 154, 64) solid;
+    background-color: rgb(221, 220, 220);
+    border-radius: 15px;
+    outline: none;
+    height: 45px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    color: rgb(6, 166, 240);
+    transition: 0.75s;
+}
+.cmtbtn:hover {
+    border: 2px rgb(6, 166, 240) solid;
+
+    color: rgb(19, 228, 19);
+    transition: 0.75s;
+}
+#newsfeedname {
+    margin-top: 20px;
+}
+.a_hover img {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: rotate(-10.5deg);
+
+    box-shadow: -5px 5px 5px rgb(214, 213, 213), -15px 15px 8px rgb(197, 191, 191), -15px 25px 2px rgb(151, 150, 150);
+    transition: 1s;
+}
+.a_hover :hover {
+    transform: rotate(-15.5deg);
+    box-shadow: -5px 5px 5px rgb(214, 213, 213), -15px 15px 8px rgb(197, 191, 191), -15px 15px 2px rgb(43, 41, 41),
+        -20px 25px 70px rgb(27, 27, 27);
+    transition: 0.75s;
+}
+.imgg {
+    margin-top: 8px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+h6 {
+    text-align: right;
+}
